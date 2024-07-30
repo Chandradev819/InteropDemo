@@ -34,10 +34,10 @@ window.showChart = (chartType, dataOptions) => {
 }
 
 // JavaScript function
-// JavaScript function
-window.displayObject = function (myObject) {
-    // Access properties directly
-    console.log("Name:", myObject.Name);
-    console.log("Age:", myObject.Age);
+window.displayPerson = function (myObject) {
+    // Parse the JSON string back into a JavaScript object
+    const person = JSON.parse(myObject);
+    console.log("Name:", person.Name);
+    console.log("Age:", person.Age);
 };
 
